@@ -348,4 +348,54 @@
     display: none;
   }
 
+  body {
+  font-family: Playfair Display,Georgia,serif;
+  font-size: 24px;
+  }
   
+  .flex-container {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+  }
+
+  ol,ul {
+      font-family: Roboto, sans-serif;
+  }
+
+  ol {
+      list-style: none;
+       counter-reset: li
+    }
+
+    ol li::before 
+    {content: counter(li);
+        color: red;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em
+    }
+li {
+    counter-increment: li;
+}
+
+
+  li p {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+      width: 80%;
+        align-self: center;
+  }
+
+  #recipe {
+      background-color:#b3b3b3 ;
+      flex-shrink: 1;
+  }
+
+  .notes {
+      font-style: italic;
+      font-size: 20px;
+      }
